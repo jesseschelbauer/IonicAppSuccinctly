@@ -2,10 +2,5 @@
   "name": "IonicAppSuccinctly",
   "app_id": "",
   "v2": true,
-  "typescript": true,
-  "proxies": [
-    {
-        "path": "/TestemunhoPublicoApi",
-        "proxyUrl": "http://192.168.0.11/TestemunhoPublicoApi"
-    }]
+  "typescript": true
 }
