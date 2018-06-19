@@ -34,7 +34,8 @@ export class LoginPage {
             subTitle: 'Aqui deve ser o conteúdo da mensagem de erro',
             buttons: ['OK']
           });
-          alert.present();
+          alert.present(); 
+          // Teste
 
         });
 
