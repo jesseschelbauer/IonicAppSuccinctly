@@ -31,7 +31,7 @@ export class LoginPage {
         error => {
           let alert = this.alert.create({
             title: 'Problema',
-            subTitle: 'Aqui deve ser o conteúdo da mensagem de erro',
+            subTitle: `${error.error} ${error.message} ${error.url}`,
             buttons: ['OK']
           });
           alert.present(); 
