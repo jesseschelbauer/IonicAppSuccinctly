@@ -1,0 +1,10 @@
+<ion-content padding>
+  <ion-list>
+    <ion-label>Publicador</ion-label>
+    <ion-select [(ngModel)]="publicador" multiple="false" interface="action-sheet">
+        <ion-option *ngFor="let p of publicadores" [value]="p">{{p.nome}}</ion-option>
+    </ion-select>
+  </ion-list>
+
+  {{navParams.data|json}}
+</ion-content>
