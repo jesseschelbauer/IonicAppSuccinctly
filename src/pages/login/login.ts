@@ -13,7 +13,6 @@ export class LoginPage {
   }
 
   ionViewDidLoad() {
-
   }
 
   public login() {
@@ -30,19 +29,11 @@ export class LoginPage {
         },
         error => {
           let alert = this.alert.create({
-            title: 'Problema',
-            subTitle: `${error.error} ${error.message} ${error.url}`,
+            title: 'Login inválido',
+            subTitle: `Verifique seu usário e senha`,
             buttons: ['OK']
           });
           alert.present(); 
-          // Teste
-
         });
-
-
-
-
-
   }
-
 }
