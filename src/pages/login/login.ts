@@ -17,7 +17,6 @@ export class LoginPage {
   }
 
   public login() {
-    this.nav.setRoot(HomePage);
     this.Api.login(this.credencial)
       .subscribe(
         user => {

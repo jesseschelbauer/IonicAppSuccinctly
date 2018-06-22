@@ -18,7 +18,7 @@ export class ApiProvider {
   }
 
   public login(user: any) {
-    return this.http.post<object>("TestemunhoPublicoApi/Account/Login", user).map((user:any) => {
+    return this.http.post<object>("http://testemunhopublicoapi20180622100828.azurewebsites.net/Account/Login", user).map((user:any) => {
       if (user && user.authenticated && user.accessToken) {
           localStorage.setItem('currentUser', JSON.stringify(user));
       }else{
