@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController, NavParams, DateTime } from 'ionic-angular';
-import moment from 'moment';
+import * as moment from 'moment';
 /**
  * Generated class for the PlainningPage page.
  *
