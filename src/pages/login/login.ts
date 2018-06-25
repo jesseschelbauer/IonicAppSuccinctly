@@ -25,6 +25,13 @@ export class LoginPage {
             loading.present();
             this.nav.setRoot(HomePage);
             
+          }else{
+            let alert = this.alert.create({
+              title: 'Login inválido',
+              subTitle: `Verifique seu usário e senha`,
+              buttons: ['OK']
+            });
+            alert.present();   
           }
         },
         error => {

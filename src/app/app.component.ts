@@ -6,15 +6,16 @@ import { ApiProvider } from '../providers/api/api';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-import {TestePage} from '../pages/teste/teste';
-import {LoginPage} from '../pages/login/login';
+import { TestePage } from '../pages/teste/teste';
+import { LoginPage } from '../pages/login/login';
+import { PlainningPage } from '../pages/plainning/plainning';
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, private Api: ApiProvider) {
     this.initializeApp();
@@ -23,7 +24,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Test', component: TestePage }
+      { title: 'Test', component: TestePage },
+      { title: 'Planejamento', component: PlainningPage }
     ];
 
   }
@@ -34,7 +36,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      this.nav.root = LoginPage;
+      this.nav.root = HomePage;
     });
   }
 
@@ -44,7 +46,7 @@ export class MyApp {
     this.nav.setRoot(page.component);
   }
 
-  logoff(){
+  logoff() {
     this.Api.logout();
     this.nav.setRoot(LoginPage);
   }

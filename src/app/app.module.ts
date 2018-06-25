@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { TestePage } from '../pages/teste/teste';
 import { LoginPage } from '../pages/login/login';
+import { PlainningPage } from '../pages/plainning/plainning';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +20,9 @@ import { JwtInterceptor } from '../providers/jwt-interceptor/jwt-interceptor';
     MyApp,
     HomePage,
     ListPage,
-    TestePage, LoginPage
+    TestePage,
+    LoginPage,
+    PlainningPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,9 @@ import { JwtInterceptor } from '../providers/jwt-interceptor/jwt-interceptor';
     MyApp,
     HomePage,
     ListPage,
-    TestePage, LoginPage
+    TestePage, 
+    LoginPage,
+    PlainningPage
   ],
   providers: [
     StatusBar,
