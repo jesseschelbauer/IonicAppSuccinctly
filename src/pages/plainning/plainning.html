@@ -9,7 +9,7 @@
     <ion-list>
       <ion-item *ngFor="let time of day.times">
         <ion-label>{{time.start | date : 'HH:mm'}} as {{time.end| date : 'HH:mm'}}</ion-label>
-        <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+        <ion-checkbox [(ngModel)]="time.checked"></ion-checkbox>
       </ion-item>
     </ion-list>
   </div>
